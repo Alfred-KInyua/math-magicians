@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.calculator {
+  height: 50vh;
+  width: 50%;
+  border-collapse: collapse;
+}
+
+.answer {
+  font-family: Abel, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #39393d98;
+  color: rgb(254, 250, 250);
+  width: 99%;
+  height: 100%;
+}
+
+#orange {
+  background-color: rgba(187, 67, 37, 0.752);
+}
+
+input[type=button] {
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  background-color: rgba(224, 211, 211, 0.679);
+  color: black;
+  width: 100%;
+  height: 100%;
+  font-weight: 100;
+  border: unset;
+}
+
+input:active[type=button] {
+  background: #fcfcfc;
+}
