@@ -14,7 +14,7 @@
 
 ## Live Demo (if available)
 
-Click [here]() to check out the live demo
+Click [here](https://deploy-preview-3--incredible-blancmange-02ba42.netlify.app/) to check out the live demo
 
 See the deployment on heroku [here]()
 
