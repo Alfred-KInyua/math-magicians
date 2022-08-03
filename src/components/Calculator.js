@@ -1,21 +1,36 @@
 import React from 'react';
 import './style.css';
+import calculate from './logic/Calculate';
 
 class Calculator extends React.Component {
   constructor(props) {
     super(props);
     this.state = {};
+    this.onClick = this.onClick.bind(this);
   }
 
+  onClick = (e) => {
+    this.setState((data) => calculate(data, e.target.value));
+  };
+
   render() {
+    const { next, total } = this.state;
     return (
       <div>
         <div className="container">
+
           <table className="calculator coll">
+
             <tr>
               <td colSpan="4">
                 {' '}
-                <input className="answer" type="text" id="result" disabled />
+                <div className="answer">
+                  {' '}
+                  {' '}
+                  {next || total || 0}
+                  {' '}
+                </div>
+
                 {' '}
               </td>
 
@@ -23,23 +38,23 @@ class Calculator extends React.Component {
             <tr>
 
               <td>
+
+                <input type="button" name="AC " value="AC" onClick={this.onClick} />
+
+              </td>
+              <td>
                 {' '}
-                <input type="button" value="AC" onClick="display('1')" />
+                <input type="button" value="+/-" onClick={this.onClick} />
                 {' '}
               </td>
               <td>
                 {' '}
-                <input type="button" value="+/-" onClick="display('2')" />
+                <input type="button" value="%" onClick={this.onClick} />
                 {' '}
               </td>
               <td>
                 {' '}
-                <input type="button" value="%" onClick="display('3')" />
-                {' '}
-              </td>
-              <td>
-                {' '}
-                <input type="button" value="÷" id="orange" onClick="display('÷')" />
+                <input type="button" value="÷" id="orange" onClick={this.onClick} />
                 {' '}
               </td>
             </tr>
@@ -47,84 +62,84 @@ class Calculator extends React.Component {
 
               <td>
                 {' '}
-                <input type="button" value="7" onClick="display('1')" />
+                <input type="button" value="7" onClick={this.onClick} />
                 {' '}
               </td>
               <td>
                 {' '}
-                <input type="button" value="8" onClick="display('2')" />
+                <input type="button" value="8" onClick={this.onClick} />
                 {' '}
               </td>
               <td>
                 {' '}
-                <input type="button" value="9" onClick="display('3')" />
+                <input type="button" value="9" onClick={this.onClick} />
                 {' '}
               </td>
               <td>
                 {' '}
-                <input type="button" value="*" id="orange" onClick="display('/')" />
-                {' '}
-              </td>
-            </tr>
-            <tr>
-              <td>
-                {' '}
-                <input type="button" value="4" onClick="display('4')" />
-                {' '}
-              </td>
-              <td>
-                {' '}
-                <input type="button" value="5" onClick="display('5')" />
-                {' '}
-              </td>
-              <td>
-                {' '}
-                <input type="button" value="6" onClick="display('6')" />
-                {' '}
-              </td>
-              <td>
-                {' '}
-                <input type="button" value="-" id="orange" onClick="display('-')" />
+                <input type="button" value="x" id="orange" onClick={this.onClick} />
                 {' '}
               </td>
             </tr>
             <tr>
               <td>
                 {' '}
-                <input type="button" value="1" onClick="display('1')" />
+                <input type="button" value="4" onClick={this.onClick} />
                 {' '}
               </td>
               <td>
                 {' '}
-                <input type="button" value="2" onClick="display('2')" />
+                <input type="button" value="5" onClick={this.onClick} />
                 {' '}
               </td>
               <td>
                 {' '}
-                <input type="button" value="3" onClick="display('3')" />
+                <input type="button" value="6" onClick={this.onClick} />
                 {' '}
               </td>
               <td>
                 {' '}
-                <input type="button" value="+" id="orange" onClick="display('+')" />
+                <input type="button" value="-" id="orange" onClick={this.onClick} />
+                {' '}
+              </td>
+            </tr>
+            <tr>
+              <td>
+                {' '}
+                <input type="button" value="1" onClick={this.onClick} />
+                {' '}
+              </td>
+              <td>
+                {' '}
+                <input type="button" value="2" onClick={this.onClick} />
+                {' '}
+              </td>
+              <td>
+                {' '}
+                <input type="button" value="3" onClick={this.onClick} />
+                {' '}
+              </td>
+              <td>
+                {' '}
+                <input type="button" value="+" id="orange" onClick={this.onClick} />
                 {' '}
               </td>
             </tr>
             <tr>
               <td colSpan="2">
                 {' '}
-                <input type="button" value="0" onClick="display('0')" />
+                <input type="button" value="0" onClick={this.onClick} />
                 {' '}
               </td>
               <td>
                 {' '}
-                <input type="button" value="*" onClick="display('*')" />
+                <input type="button" value="." onClick={this.onClick} />
                 {' '}
               </td>
 
               <td>
                 {' '}
-                <input type="button" value="=" id="orange" onClick="calculate()" />
+                <input type="button" value="=" id="orange" onClick={this.onClick} />
                 {' '}
               </td>
 
