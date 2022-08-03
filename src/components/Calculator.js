@@ -1,10 +1,12 @@
 import React from 'react';
 import './style.css';
+import './logic/Calculate';
 
 class Calculator extends React.Component {
   constructor(props) {
     super(props);
     this.state = {};
+    this.onClick = this.onClick.bind(this);
   }
 
   render() {
@@ -24,7 +26,7 @@ class Calculator extends React.Component {
 
               <td>
                 {' '}
-                <input type="button" value="AC" onClick="display('1')" />
+                <input type="button" name="AC " value="AC" onClick="display('1')" />
                 {' '}
               </td>
               <td>
