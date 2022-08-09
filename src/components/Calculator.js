@@ -9,30 +9,24 @@ const Calculator = () => {
   };
   return (
     <div>
+      <p className="strong">
+        <strong>Lets do some math!</strong>
+      </p>
       <div className="container">
-
-        <table className="calculator coll">
-
+        <table className="calculator">
           <tr>
             <td colSpan="4">
-              {' '}
               <div className="answer">
-                {' '}
                 {' '}
                 {data.next || data.total || 0}
                 {' '}
               </div>
-
               {' '}
             </td>
-
           </tr>
           <tr>
-
             <td>
-
               <input type="button" name="AC " value="AC" onClick={onClick} />
-
             </td>
             <td>
               {' '}
@@ -46,12 +40,16 @@ const Calculator = () => {
             </td>
             <td>
               {' '}
-              <input type="button" value="÷" id="orange" onClick={onClick} />
+              <input
+                type="button"
+                value="÷"
+                id="orange"
+                onClick={onClick}
+              />
               {' '}
             </td>
           </tr>
           <tr>
-
             <td>
               {' '}
               <input type="button" value="7" onClick={onClick} />
@@ -69,7 +67,12 @@ const Calculator = () => {
             </td>
             <td>
               {' '}
-              <input type="button" value="x" id="orange" onClick={onClick} />
+              <input
+                type="button"
+                value="x"
+                id="orange"
+                onClick={onClick}
+              />
               {' '}
             </td>
           </tr>
@@ -91,7 +94,12 @@ const Calculator = () => {
             </td>
             <td>
               {' '}
-              <input type="button" value="-" id="orange" onClick={onClick} />
+              <input
+                type="button"
+                value="-"
+                id="orange"
+                onClick={onClick}
+              />
               {' '}
             </td>
           </tr>
@@ -113,7 +121,12 @@ const Calculator = () => {
             </td>
             <td>
               {' '}
-              <input type="button" value="+" id="orange" onClick={onClick} />
+              <input
+                type="button"
+                value="+"
+                id="orange"
+                onClick={onClick}
+              />
               {' '}
             </td>
           </tr>
@@ -131,10 +144,14 @@ const Calculator = () => {
 
             <td>
               {' '}
-              <input type="button" value="=" id="orange" onClick={onClick} />
+              <input
+                type="button"
+                value="="
+                id="orange"
+                onClick={onClick}
+              />
               {' '}
             </td>
-
           </tr>
         </table>
       </div>

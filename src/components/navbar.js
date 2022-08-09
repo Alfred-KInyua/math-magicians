@@ -1,21 +1,39 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const NavBar = () => (
   <header>
-    <nav className="flex space-btn">
+    <nav className="top">
       <div className="logo">
-        <Link to="/">Math Magician</Link>
+        <NavLink to="/" className={({ isActive }) => (isActive ? 's' : '')}>
+          {' '}
+          <h1>Math Magician</h1>
+        </NavLink>
       </div>
-      <ul className="navbar flex space-btn">
-        <li className="nav-link border-right">
-          <Link to="/" activeClassName="link">Home</Link>
-        </li>
-        <li className="nav-link border-right">
-          <Link to="/calculator" activeClassName="link">Calculator</Link>
+      <ul className="navbar">
+        <li className="nav-link ">
+          <NavLink
+            to="/"
+            className={({ isActive }) => (isActive ? 'link' : '')}
+          >
+            Home
+          </NavLink>
         </li>
         <li className="nav-link">
-          <Link to="/quotes" activeClassName="link" exact>Quotes</Link>
+          <NavLink
+            to="/calculator"
+            className={({ isActive }) => (isActive ? 'link' : '')}
+          >
+            Calculator
+          </NavLink>
+        </li>
+        <li className="nav-link">
+          <NavLink
+            to="/quotes"
+            className={({ isActive }) => (isActive ? 'link' : '')}
+          >
+            Quotes
+          </NavLink>
         </li>
       </ul>
     </nav>

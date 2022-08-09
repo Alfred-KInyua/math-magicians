@@ -2,7 +2,7 @@ import React from 'react';
 
 const Quotes = () => (
   <main>
-    <div className="qoute flex align-center justify-center">
+    <div className="qoute">
       <p>
         Mathematics is not about numbers, equations, computations or
         algorithms; it&apos;s about understanding. - William Paul Thurston
