@@ -3,23 +3,28 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100vh;
 }
 
 .calculator {
+  justify-self: flex-end;
   height: 50vh;
   width: 50%;
   border-collapse: collapse;
 }
 
+a {
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
 .answer {
-  font-family: Abel, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: Abel, "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   background-color: #39393d98;
   color: #fefafa;
   width: 100%;
@@ -30,8 +35,8 @@
   background: #f5912e;
 }
 
-input[type=button] {
-  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+input[type="button"] {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
   background-color: rgba(224, 211, 211, 0.679);
   color: black;
   width: 100%;
@@ -40,7 +45,84 @@ input[type=button] {
   border: unset;
 }
 
-input:active[type=button] {
+input:active[type="button"] {
   background: #fcfcfc;
+}
+
+.qoute {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80vh;
+  font-weight: 700;
+}
+
+.top {
+  padding: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #a96c2f25;
+}
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+ul li {
+  list-style: none;
+  margin-right: 1em;
+  border-right: 1px solid gray;
+  padding-right: 5px;
+}
+
+.link {
+  color: red;
+}
+
+p {
+  font-size: 1.2em;
+  margin-left: 1em;
+}
+
+.title {
+  margin: 12px 0;
+}
+
+.title h2 {
+  font-size: 1.5rem;
+  margin-left: 1em;
+}
+
+.pquote {
+  text-align: center;
+  width: 50%;
+}
+
+.description {
+  line-height: 0.5;
+}
+
+.description .text {
+  margin: 24px 0;
+  text-align: justify;
+}
+
+.strong {
+  margin-left: 2em;
 }
 /*# sourceMappingURL=style.css.map */
