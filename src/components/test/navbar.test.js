@@ -1,6 +1,6 @@
 import renderer from 'react-test-renderer';
 import { BrowserRouter as Router } from 'react-router-dom';
-import NavBar from './navbar';
+import NavBar from '../navbar';
 
 describe('Testing Navbar component', () => {
   test('Testing with Snapshot', () => {
