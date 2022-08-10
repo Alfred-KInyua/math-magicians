@@ -1,4 +1,3 @@
-// import { Renderer } from 'react-test-renderer';
 import renderer from 'react-test-renderer'; // ES6
 import Calculator from '../Calculator';
 

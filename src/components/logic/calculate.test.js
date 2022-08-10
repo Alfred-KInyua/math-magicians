@@ -1,4 +1,3 @@
-// import { render,screen } from "@testing-library/react";
 import calculate from './Calculate';
 
 describe('Calculate unit Test', () => {
