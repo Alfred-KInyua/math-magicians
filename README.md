@@ -53,6 +53,12 @@ Run "npm run deploy" on your terminal
 - Twitter: [@alfkinyua](https://twitter.com/alfkinyua)
 - LinkedIn: [Alfred KInyua](linkedin.com/in/alfred-kinyua-25927a64)
 
+👤 **Author2**
+
+- GitHub: [@Chrispaix Kaze](https://github.com/ChrispaixK)
+- Twitter: [@ChrispaixK](https://twitter.com/ChrispaixK)
+- LinkedIn: [@Chrispaix Kaze](linkedin.com/in/chrispaix-kaze-70445a175)
+
 
 
 
