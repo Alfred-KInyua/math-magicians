@@ -1,12 +1,12 @@
-import { Renderer } from 'react-test-renderer';
+import renderer from 'react-test-renderer';
 import { BrowserRouter as Router } from 'react-router-dom';
 import NavBar from './navbar';
 
-describe('Testing Navbar component', () => {
-  test('Testing with Snapshot', () => {
-    const rendredcomponent = Renderer.create(
+describe('Testing NavBar component', () => {
+  test('Testing with snapshot', () => {
+    const tree = renderer.create(
       <Router><NavBar /></Router>,
-    );
-    expect(rendredcomponent).toMatchSnapshot();
+    ).toJSON();
+    expect(tree).toMatchSnapshot();
   });
 });
