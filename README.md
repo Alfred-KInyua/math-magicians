@@ -14,7 +14,7 @@
 
 ## Live Demo (if available)
 
-Click [here](https://deploy-preview-3--incredible-blancmange-02ba42.netlify.app/) to check out the live demo
+Click [Single Page Application for Calculator](https://deploy-preview-6--incredible-blancmange-02ba42.netlify.app/) to check out the live demo
 
 See the deployment on heroku [here]()
 
