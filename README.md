@@ -16,9 +16,6 @@
 
 Click [Single Page Application for Calculator](https://63d8d936fb0a6e5bc05b7516--curious-arithmetic-24ea99.netlify.app/) to check out the live demo
 
-See the deployment on heroku [here]()
-
-
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
